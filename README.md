@@ -55,5 +55,7 @@ You'll need to install docker and docker-compose.  The `setup-ec2.sh` script tak
 scp  -i "vanillaApp.pem" ./setup-ec2.sh ./run-compose-prod.sh ./docker-compose.prod.yml   ec2-user@ec2-18-234-99-58.compute-1.amazonaws.com:/home/ec2-user
 ```
 
+On the ec2 you will need to run `docker login` to authenticate.
+
 Now you can run the Docker installation script: `./setup-ec2.sh`, and then the `run-compose-prod.sh` script with appropriate arguments.
 
